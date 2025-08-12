@@ -1,0 +1,36 @@
+.dropping-texts {
+  display: inline-block;
+  vertical-align: top;
+  height: 1em; /* match h1 line height */
+  overflow: hidden;
+  font-size: inherit; /* match h1 size */
+  color: #56b6c2;
+}
+
+.dropping-texts span {
+  display: block;
+  height: 1em;
+  animation: slideWords 8s infinite;
+}
+
+@keyframes slideWords {
+  0%,
+  20% {
+    transform: translateY(0%);
+  }
+  25%,
+  45% {
+    transform: translateY(-100%);
+  }
+  50%,
+  70% {
+    transform: translateY(-200%);
+  }
+  75%,
+  95% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
